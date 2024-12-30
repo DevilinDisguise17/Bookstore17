@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definindo o charset para UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Tornando a página responsiva para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Bookstore</title>
+
+    <!-- Link para o arquivo CSS que define o estilo da página -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Container de pesquisa onde o usuário pode buscar livros -->
+<div class="search-container">
+    <h2>Search Books</h2>
+    <!-- Campo de entrada para pesquisa por autor ou gênero -->
+    <input type="text" id="searchBar" placeholder="Search by Author or Genre">
+</div>
+
+<!-- Container principal que contém o formulário para adicionar livros e a lista de livros -->
+<div class="container">
+
+    <!-- Formulário para adicionar um livro -->
+    <div class="form-container">
+        <h1>Add a Book</h1>
+        <form id="addBookForm">
+            <!-- Campo de entrada para o título do livro -->
+            <input type="text" id="title" placeholder="Book Title" required><br><br>
+
+            <!-- Campo de entrada para o autor do livro -->
+            <input type="text" id="author" placeholder="Author" required><br><br>
+
+            <!-- Campo de entrada para o gênero do livro -->
+            <input type="text" id="genre" placeholder="Genre" required><br><br>
+
+            <!-- Campo para fazer upload de um arquivo PDF (opcional) -->
+            <input type="file" id="pdfFile" accept=".pdf"><br><br>
+
+            <!-- Botão para submeter o formulário e adicionar o livro -->
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <!-- Lista onde os livros adicionados serão exibidos -->
+    <div class="book-list">
+        <h2>Books List</h2>
+        <ul id="bookList">
+            <!-- Os livros adicionados aparecerão aqui -->
+        </ul>
+    </div>
+</div>
+
+<!-- Inclusão do arquivo JavaScript que irá gerenciar a lógica da página -->
+<script src="script.js"></script>
+</body>
+</html>
