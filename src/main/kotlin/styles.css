@@ -1,0 +1,213 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+    margin: 0; /* Remove as margens da página */
+    padding: 0; /* Remove o preenchimento da página */
+    background-color: #f9f9f9; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo da barra de pesquisa */
+.search-container {
+    position: sticky; /* Mantém a barra fixa no topo ao rolar a página */
+    top: 0; /* Define que ficará no topo */
+    z-index: 10; /* Garante que a barra de pesquisa ficará sobre outros elementos */
+    background-color: #007bff; /* Cor de fundo azul */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.search-container h2 {
+    color: white; /* Cor do título da barra de pesquisa */
+    margin: 0; /* Remove a margem do título */
+}
+
+.search-container input {
+    width: 80%; /* Largura do campo de pesquisa */
+    padding: 10px; /* Preenchimento interno */
+    margin-top: 10px; /* Margem superior */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda cinza */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do formulário de adicionar livro */
+.container {
+    display: flex; /* Usa flexbox para organizar os itens */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Preenchimento interno */
+}
+
+.form-container {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    margin: 20px 0; /* Margem acima e abaixo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    width: 90%; /* Largura do formulário */
+    max-width: 600px; /* Largura máxima */
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+.form-container h1 {
+    margin-bottom: 20px; /* Margem abaixo do título */
+    color: #007bff; /* Cor do título */
+}
+
+.form-container input,
+.form-container button {
+    width: calc(100% - 40px); /* Largura do campo, considerando a margem */
+    padding: 10px; /* Preenchimento interno */
+    margin: 10px 0; /* Margem acima e abaixo */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.form-container button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+}
+
+.form-container button:hover {
+    background-color: #0056b3; /* Cor de fundo quando o botão é sobrevoado */
+}
+
+/* Estilo da lista de livros */
+.book-list {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    margin: 20px 0; /* Margem acima e abaixo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    width: 90%; /* Largura da lista */
+    max-width: 800px; /* Largura máxima */
+}
+
+.book-list h2 {
+    margin-bottom: 20px; /* Margem abaixo do título */
+    color: #007bff; /* Cor do título */
+}
+
+#bookList {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+#bookList li {
+    background-color: #f4f4f4; /* Cor de fundo dos itens da lista */
+    margin: 10px 0; /* Margem acima e abaixo */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+#bookList li a {
+    margin-left: 10px; /* Margem à esquerda do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; /* Cor do link */
+}
+
+#bookList li a:hover {
+    text-decoration: underline; /* Sublinha o link quando o cursor passa sobre ele */
+}
+
+.delete-button,
+.edit-button {
+    margin-left: 10px; /* Margem à esquerda dos botões */
+    background-color: #ff4d4d; /* Cor de fundo vermelho para o botão de deletar */
+    border: none; /* Remove a borda */
+    padding: 5px 10px; /* Preenchimento interno */
+    color: white; /* Cor do texto branco */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.delete-button:hover {
+    background-color: #cc0000; /* Cor de fundo mais escura quando o botão de deletar é sobrevoado */
+}
+
+.edit-button {
+    background-color: #ffcc00; /* Cor de fundo amarela para o botão de editar */
+}
+
+.edit-button:hover {
+    background-color: #e6b800; /* Cor de fundo mais escura quando o botão de editar é sobrevoado */
+}
+
+/* Estilo do container de login */
+.login-container {
+    max-width: 400px; /* Largura máxima */
+    margin: 100px auto; /* Centraliza o container */
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradiente de fundo */
+    padding: 30px; /* Preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-align: center; /* Alinha o conteúdo ao centro */
+    color: white; /* Cor do texto branco */
+}
+
+.login-container h1 {
+    font-size: 28px; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+    font-weight: bold; /* Negrito para o título */
+}
+
+.login-container input {
+    width: calc(100% - 20px); /* Largura do campo de entrada, considerando a margem */
+    padding: 10px; /* Preenchimento interno */
+    margin: 10px 0; /* Margem acima e abaixo */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+.login-container input::placeholder {
+    color: #aaa; /* Cor do texto do placeholder */
+}
+
+.login-container button {
+    width: calc(100% - 20px); /* Largura do botão, considerando a margem */
+    padding: 10px; /* Preenchimento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+    background-color: #ffcc00; /* Cor de fundo amarela */
+    color: #333; /* Cor do texto */
+    margin-top: 20px; /* Margem superior */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.login-container button:hover {
+    background-color: #e6b800; /* Cor de fundo mais escura quando o botão é sobrevoado */
+}
+
+#errorMessage {
+    color: #ff4d4d; /* Cor do texto do erro */
+    margin-top: 10px; /* Margem superior */
+    display: none; /* Inicialmente, o erro está oculto */
+}
+
+/* Design Responsivo */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 50px auto; /* Ajusta a margem em telas pequenas */
+        padding: 20px; /* Ajusta o preenchimento */
+    }
+
+    .login-container h1 {
+        font-size: 24px; /* Ajusta o tamanho do título em telas pequenas */
+    }
+}
